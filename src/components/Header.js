@@ -1,20 +1,21 @@
 import React from 'react'
 import Close from "./svg/times-solid.svg";
 import MenueBar from "./svg/bars-solid.svg";
+
 import {BrowserRouter as Router , Routes ,Route ,Link} from 'react-router-dom';
 const Header=()=>{
     return(
-        <div>
+        <div className="Main">
             <header>
                 <div className="logo">
-                    <h1><Link to="/products">Ziya's</Link></h1>
+                    <h1><Link to="/products" style={{textDecoration:'none'}}>Ziya's</Link></h1>
                 </div>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/products">Products</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
-                    <li><Link to="/login">Login / Register</Link></li>
+                    <li><Link to="/home" style={{textDecoration:'none'}}>Home</Link></li>
+                    <li><Link to="/products" style={{textDecoration:'none'}}>Products</Link></li>
+                    <li><Link to="/about" style={{textDecoration:'none'}}>About</Link></li>
+                    <li><Link to="/newproducts" style={{textDecoration:'none'}}>Add Products</Link></li>
+                    <li><Link to="/login" style={{textDecoration:'none'}}>Login / Register</Link></li>
                     <li>
                         <img src={Close} alt="" width={30}/>
                     </li>

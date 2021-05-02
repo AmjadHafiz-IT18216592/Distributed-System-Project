@@ -1,0 +1,10 @@
+POST http://localhost:4001/app/addItems
+Content-Type: application/json
+
+{
+    "title":"ghs",
+    "about":"hgkg",
+    "booktype":"fdg",
+    "date":"2021-04-22T18:30:00.000Z",
+    "price":23
+}
